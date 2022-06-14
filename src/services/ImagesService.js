@@ -14,8 +14,9 @@ class ImagesService {
 
   async changeDate(date) {
     console.log(date);
-    const res = await api.get(`date=${date}`)
+    const res = await api.get(`?date=${date}`)
     console.log(res.data);
+    AppState.image = res.data
   }
 }
 

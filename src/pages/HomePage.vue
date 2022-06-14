@@ -42,6 +42,7 @@ export default {
       async changeDate() {
         try {
           await imagesService.changeDate(window.event.target.date.value)
+          document.getElementById('app').style.backgroundImage = `url('${AppState.image.hdurl}')`;
         } catch (error) {
           Pop.toast(error.message, "error")
           logger.log(error)
