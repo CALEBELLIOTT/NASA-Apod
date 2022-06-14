@@ -8,6 +8,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $body-bg;
 }
 
@@ -26,6 +29,7 @@ select {
     &:valid {
       border: 1px solid $success;
     }
+
     &:invalid {
       border: 1px solid $danger;
     }
